@@ -313,7 +313,7 @@ class Device(JsonObject):
             "name": timezone_name if timezone_name is not None else self._extract_attribute('timezone_name', others),
         })
         self._user_role = user_role
-
+        self._others = others
     @property
     def mac(self) -> str:
         return self._mac
